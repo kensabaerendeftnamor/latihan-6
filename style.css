@@ -1,0 +1,104 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* KOTAK 1 - NAVBAR */
+.navbar {
+  position: fixed; /* contoh fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 40px;
+  background: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: yellow;
+}
+
+/* KOTAK 2 - HERO */
+.hero {
+  position: relative; /* induk relative */
+  height: 100vh;
+  background: url("v.jpg") no-repeat center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  position: absolute; /* anak absolute terhadap hero */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.103); 
+  color: white;             
+  text-decoration: none;
+  border: 2px solid white;  
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+
+
+/* KOTAK 3 - BODY */
+.content {
+  padding: 60px 20px;
+  background: #000000;
+}
+
+.content h2 {
+  margin-bottom: 20px;
+  color: white;
+}
+.content p {
+  margin-bottom: 10px;
+  color: white;
+}
